@@ -11,5 +11,7 @@ public interface AlumnoRepository extends JpaRepository<Alumno, Integer>{
 
 	public List<Alumno> findByDni(String dni);
 	public List<Alumno> findByNombreLike(String nombre);
+	//buscar por id de alumno
+	public List<Alumno> findByIdAlumno(int id);
 
 }

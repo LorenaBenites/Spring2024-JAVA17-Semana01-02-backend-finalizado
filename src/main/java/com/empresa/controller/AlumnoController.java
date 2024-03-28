@@ -36,11 +36,16 @@ public class AlumnoController {
 		List<Alumno> lstSalida = alumnoService.listaAlumnoPorNombreLike(nombre+"%");
 		return lstSalida;
 	}
+	@GetMapping("/porId/{id}")
+	public List<Alumno> listarAlumnoPorId(@PathVariable("id")int id){
+		List<Alumno> lstSalida = alumnoService.listaAlumnoPorId(id);
+		return lstSalida;
+	}
 	
 }
 
 
-
+ 
 
 
 
